@@ -1,0 +1,9 @@
+Usage a commandline
+-----------
+	> search.bat <file name> <method code>
+
+Example: search in RobotNav-text.txt file using depth-first search
+
+	> search RobotNav-test.txt dfs
+
+
