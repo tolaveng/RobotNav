@@ -48,12 +48,16 @@ public class Main {
                 foundLocation = method.search();
                 break;
             case "BFS":
-				method = new BFSSearch(startLocation, goalLocation, boundaryXY, blockedLocations);
+                method = new BFSSearch(startLocation, goalLocation, boundaryXY, blockedLocations);
                 foundLocation = method.search();
                 break;
             case "GBFS":
+                method = new GBFSSearch(startLocation, goalLocation, boundaryXY, blockedLocations);
+                foundLocation = method.search();
                 break;
             case "AS":
+                method = new ASSearch(startLocation, goalLocation, boundaryXY, blockedLocations);
+                foundLocation = method.search();
                 break;
             default:
                 System.out.println("Unknown method");
