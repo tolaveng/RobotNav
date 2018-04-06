@@ -48,6 +48,8 @@ public class Main {
                 foundLocation = method.search();
                 break;
             case "BFS":
+				method = new BFSSearch(startLocation, goalLocation, boundaryXY, blockedLocations);
+                foundLocation = method.search();
                 break;
             case "GBFS":
                 break;
