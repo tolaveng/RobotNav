@@ -6,18 +6,17 @@ public abstract class SearchMethod {
 	public String code;				//the code used to identify the method at the command line
 	public String longName;			//the actual name of the method.
 
-	public Frontier Frontier;
-
 	public Location startLocation;
 	public Location goalLocation;
 
-	//the searched list for the purpose of checking visited nodes
-	public ArrayList<Location> Searched;
+	public Frontier Frontier = new Frontier();
+
+	public ArrayList<Location> Searched = new ArrayList<>();;
 
 	/* custom search by strategy */
 	public abstract Location search();
 
-	/* custom adding a location to the frontier */
+	/* implement by adding a location to the frontier */
 	public abstract boolean addToFrontier(Location aLocation);
 
 

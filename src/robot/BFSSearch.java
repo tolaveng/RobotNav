@@ -12,9 +12,6 @@ public class BFSSearch extends SearchMethod {
         this.code = "BFS";
         this.longName = "Breadth-First Search";
 
-        this.Frontier = new Frontier();
-        this.Searched = new ArrayList<>();
-
         this.startLocation = startLocation;
         this.goalLocation = goalLocation;
         this.boundaryXY = boundaryXY;

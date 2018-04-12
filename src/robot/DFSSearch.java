@@ -12,9 +12,6 @@ public class DFSSearch extends SearchMethod {
         this.code = "DFS";
         this.longName = "Depth-First search";
 
-        this.Frontier = new Frontier();
-        this.Searched = new ArrayList<>();
-
         this.startLocation = startLocation;
         this.goalLocation = goalLocation;
         this.boundaryXY = boundaryXY;

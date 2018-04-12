@@ -12,8 +12,6 @@ public class ASSearch extends SearchMethod {
         this.code = "A*";
         this.longName = "A* Search";
 
-        this.Frontier = new Frontier();
-        this.Searched = new ArrayList<>();
         this.startLocation = startLocation;
         this.goalLocation = goalLocation;
         this.boundaryXY = boundaryXY;
